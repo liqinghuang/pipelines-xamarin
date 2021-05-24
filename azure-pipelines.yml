@@ -56,7 +56,7 @@ jobs:
 
   - task: XamariniOS@2
     inputs:
-      solutionFile: '**/*.sln'
-      configuration: 'Release'
-      buildForSimulator: true
+      solutionFile: '**/*iOS.csproj'
+      configuration: '$(buildConfiguration)'
       packageApp: false
+      buildForSimulator: true
